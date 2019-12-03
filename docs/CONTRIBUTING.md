@@ -110,6 +110,14 @@ When working on fixing bugs, please use the following workflow:
 
 If you get stuck with any of this, ask in your issue or pull request, and we'll give you a hand.
 
+### Squashing Commits
+Before creating your pull request you may want to squash all your commits down to one. Ideally this should be done before you rebase on the upstream master.
+
+Before you begin make you are in your own branch and make sure any and all changes you wish to make are commited.
+1. The first step is to find the base where your branch began. To find this you can run ```git log``` and look through the history for the commit before your first commit. Copy the hash from this commit.
+1. Run ```git rebase -i``` followed by the base commits hash.
+1. 
+
 ## Making changes to package.json
 
 If you are doing any work that relates to the `package.json` file, you need to do this with care. Here are some tips:
